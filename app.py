@@ -5,7 +5,7 @@ import requests
 
 def fetch_poster(movie_id):
     response = requests.get(
-        f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=<YOUR_TMDB_API_KEY>&language=en-US"
+        f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=9ee43d7c277686bcb8fe646905a4053c&language=en-US"
     )
     data = response.json()
     poster_path = data.get('poster_path')
